@@ -58,30 +58,3 @@ int main(void) {
     free(mas);
     return 0;
 }
-
-/*
-
-
-
-
-    int* Sort_Merge(int* mas, int nach, int kol) {
-        if (kol-nach < 2) {
-            int* x1 = (int*) malloc(sizeof(int));
-            x1[0] = mas[nach];
-            return x1;
-        }
-
-        int* xleft = Sort_Merge(mas, nach, (kol+nach)/2 );
-        int* xright = Sort_Merge(mas, (kol+nach)/2, kol);
-
-        int* xresult = (int*) malloc( kol-nach) );
-
-        xresult = Merge(xleft,xright);
-
-        return xresult;
-    }
-*/
-
-
-
-
